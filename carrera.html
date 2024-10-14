@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Mi Página Web</title>
+  </head>
+  <body>
+    <div class="padre d-flex flex-column">
+      <!-- Cabezera -->
+      <div class="header">
+        <div class="col-12">
+          <p class="text-white text-start ms-3 mb-0 py-3 fs-4 fst-italic des">
+            Bienvenidos a mi Página Web <br /><span class="fs-6 fst-normal des"
+              >Est. Jose Luis Quispe Condori</span
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Menú -->
+      <div class="nav-cont mb-3">
+        <nav class="navbar navbar-light bg-light navbar-expand-md">
+          <div class="container-fluid">
+            <a
+              href="/index.html"
+              class="navbar-brand ms-1 fs-4 text-secondary fw-bold fst-italic"
+              >Jos3LQ</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#contenidoMenu"
+              aria-controls="contenidoMenu"
+              aria-expanded="false"
+              aria-label="Mostrar/Ocultar Navegación"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="contenidoMenu">
+              <!-- Enlaces -->
+              <ul class="navbar-nav nav-tabs mx-auto">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/carrera.html" class="nav-link active">Carrera</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/bibliografia.html" class="nav-link">Bibliografia</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Materias</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    id="#submenuHobbies"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Hobbies
+                  </a>
+                  <!-- Sub-Elementos -->
+                  <ul class="dropdown-menu" aria-labelledby="submenuHobbies">
+                    <li><a href="#" class="dropdown-item">Lectura</a></li>
+                    <li><a href="#" class="dropdown-item">Videojuegos</a></li>
+                    <li><a href="#" class="dropdown-item">Tecnología</a></li>
+                    <li><a href="#" class="dropdown-item">Edición</a></li>
+                    <li><a href="#" class="dropdown-item">Modding</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <button class="btn btn-primary px-4">Contacto</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Acordeon -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/img-02.jpg"
+                    class="img-fluid"
+                    data-bs-interval="500"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/f-04.jpg"
+                    class="img-fluid"
+                    data-bs-interval="500"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/f-05.jpg"
+                    class="img-fluid"
+                    data-bs-interval="500"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Descripción General de la Carrera
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Salidas Profesionales
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Plan de Estudios
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Salidas Profesionales
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-auto border-top foot1">
+        <div class="row border-top">
+          <div class="col">
+            <p class="text-center mt-3">
+              &copy; 2024 <span class="fst-italic">José Luis</span>. Mi Página
+              Web.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

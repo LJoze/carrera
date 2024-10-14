@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+    width: 100%;    
+}
+.padre {
+    height: 100vh;    
+}
+.header {
+    background: #0f172a;    
+    display: block;
+    width: 100%; 
+}
+.des {
+    line-height: 0.8;
+}
+.nav-cont {
+    width: 100%;      
+}
+.foot1 {
+    min-height: 50px;
+}
